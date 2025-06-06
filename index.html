@@ -21,7 +21,7 @@
     header {
       background-color: #1a1a40;
       color: #00ccff;
-      padding: 20px 0;
+      padding: 20px 10px;
       text-align: center;
     }
 
@@ -34,18 +34,25 @@
     nav ul {
       list-style: none;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
+      gap: 12px;
+      padding: 10px 0;
+    }
+
+    nav li {
+      display: inline-block;
     }
 
     nav a {
       text-decoration: none;
       color: #fff;
-      padding: 8px 16px;
       background-color: #00ccff;
+      padding: 8px 16px;
       border-radius: 6px;
-      transition: 0.3s;
       font-weight: bold;
+      transition: 0.3s;
+      display: inline-block;
     }
 
     nav a:hover {
@@ -56,7 +63,7 @@
       max-width: 900px;
       margin: 30px auto;
       background-color: #ffffff;
-      padding: 40px;
+      padding: 40px 20px;
       border-radius: 12px;
       box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
     }
@@ -102,22 +109,28 @@
       margin-top: 40px;
     }
 
+    /* Optional mobile tweaks */
     @media (max-width: 600px) {
-      nav ul {
-        flex-direction: column;
-        gap: 10px;
-      }
-
-      .container {
-        padding: 20px;
-      }
-
       h1 {
         font-size: 22px;
       }
 
       h2 {
         font-size: 18px;
+      }
+
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      nav ul {
+        gap: 8px;
+      }
+
+      nav a {
+        padding: 8px 12px;
+        font-size: 14px;
       }
     }
   </style>

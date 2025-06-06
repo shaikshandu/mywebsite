@@ -1,0 +1,50 @@
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4e1d2;
+      margin: 0;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 40px;
+      font-size: 28px;
+    }
+
+    .chart-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .chart-box {
+      flex: 1;
+      min-width: 300px;
+      max-width: 600px;
+    }
+
+    .chart-box img {
+      width: 70%;
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+
+    canvas {
+      width: 100% !important;
+      height: auto !important;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .chart-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
